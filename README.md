@@ -18,7 +18,7 @@ The following datasets have been evaluated:
 
 ## Usage
 
-The pretrained models and truth tables can be downloaded [here](https://drive.google.com/drive/folders/1vso485OSVgIuCHxzmOK2hLAWCNHcCluR?usp=sharing).
+The pretrained models and truth tables can be downloaded [here](https://drive.google.com/drive/folders/1kI34WHgtQ7lciV6krZx1EiZ0BkzSgysO?usp=share_link).
 
 ### Configuration
 This project uses Python 3.10. 

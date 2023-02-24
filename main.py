@@ -213,12 +213,12 @@ def main_worker(gpu, ngpus_per_node, cfg):
     #    train_dataset, batch_size=cfg.train_batch_size, shuffle=(train_sampler is None), num_workers=cfg.num_workers, pin_memory=True, sampler=train_sampler)
     eval_loader = torch.utils.data.DataLoader(
         test_dataset, batch_size=cfg.eval_batch_size, shuffle=False, num_workers=cfg.num_workers, pin_memory=True)
-    testici = os.listdir("ckpt/TT_vf_19lv3_imgnet_small/2022_12_16_11_34_46_866997/")
-    testici = [t for t in testici if "41.59" in t]
+    #testici = os.listdir("ckpt/TT_vf_19lv3_imgnet_small/2022_12_16_11_34_46_866997/")
+    #testici = [t for t in testici if "41.59" in t]
 
     # if cfg.pretrain:
     ckpt = torch.load(os.path.join(
-        'ckpt/TT_vf_19lv3_imgnet_small/2022_12_16_11_34_46_866997/'+str(testici[0])))
+        './ckpt/last.pth'))
     model.load_state_dict(ckpt['model_state_dict'])
     # optimizer.load_state_dict(ckpt['optimizer_state_dict'])
     # start_epoch = ckpt['epoch']

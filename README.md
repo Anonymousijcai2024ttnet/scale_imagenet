@@ -12,7 +12,7 @@ The following datasets have been evaluated:
 
 |       | Accuracy (top 1) | Accuracy (top 5) | Total number of gates for the filter | 
 |-------|:----------------:|:----------------:|:------------------------------------:|
-| Small |     41.5940%     |     65.1260      |                 157M                 |
+| Small |     41.5940%     |     65.1260  %    |                 157M                 |
 
 
 
